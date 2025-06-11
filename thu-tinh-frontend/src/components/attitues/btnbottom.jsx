@@ -1,10 +1,10 @@
 import { useLocation } from "react-router-dom";
-
+import "../style/buttonstyle.css"
 export default function ButtonBottom() {
   const location = useLocation();
   const path = location.pathname;
   const timelineTypes = ["/timeline/normal", "/timeline/anonymous"];
-  const writeTypes = ["/write/normal","write/anonymous"];
+  const writeTypes = ["/write/normal","/write/anonymous"];
   //chức năng onclick
   function handFelling() {
   
@@ -33,6 +33,9 @@ export default function ButtonBottom() {
   function handPost() {
     
   }
+  function handWrite(){
+    
+  }
 
   // Xác định nút hiển thị dựa trên đường dẫn
   let buttons = [];
@@ -44,7 +47,7 @@ export default function ButtonBottom() {
       {label: "Bình luận",onClick:handComment}
     ];
   }else if (path === "/timeline/diary") {
-    buttons = [];
+    buttons = [{label:"Viết",onClick:handWrite}];
   }else if (writeTypes.includes(path)) {
     buttons = [
       {label:"Ảnh",onClick:handImage},

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-
+import "../style/buttonstyle.css"
 export default function PostButton(){
    const navigate = useNavigate();
 

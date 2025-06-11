@@ -1,0 +1,72 @@
+.breathing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+
+
+.breathing-text {
+  margin-top: 2.5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Keyframes for each phase */
+.breathing-circle {
+  border: 3px solid #84D58C;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #84D58C;
+  background-image: url(../image/logo.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  animation: breathCycle 10s infinite ease-in-out;
+}
+
+/* Mỗi vòng 10s: Hít (4s) → Giữ (2s) → Thở (4s) */
+@keyframes breathCycle {
+  0% { transform: scale(1); }            /* bắt đầu */
+  40% { transform: scale(1.5); }         /* kết thúc hít vào (4s) */
+  60% { transform: scale(1.5); }         /* giữ nguyên (2s) */
+  100% { transform: scale(1); }          /* thở ra (4s) */
+}
+.breathing-circle.paused {
+  animation-play-state: paused;
+}
+
+.meditation-page{
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  height: 80vh;
+  background: linear-gradient(
+    to right,
+    rgba(237, 234, 230, 0.5) 0%,       /* trái */
+    rgba(237, 234, 230, 0.5) 100%,    /* trái gần hết */
+    #F5EEE6 50.5%,                        /* phải */
+    #F5EEE6 100%                          /* phải */
+  );
+}
+.timer {
+  position: absolute;
+  top: 15%;
+  right: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+}
+.meditation-controls{
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+}

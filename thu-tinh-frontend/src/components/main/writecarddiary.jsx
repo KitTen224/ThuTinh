@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import logo from "../image/logo.jpg";
 import MoodSelector from "../attitues/moodselector";
-
+import ButtonBottom from "../attitues/btnbottom";
+import "../style/body.css"
 export default function WriteCardDiary() {
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
   const [mood, setMood] = useState("");
   const [showMood, setShowMood] = useState(false);
-  const [showMedia, setShowMedia] = useState(false);
 
   const textareaRef = useRef(null);
 
@@ -73,7 +73,7 @@ export default function WriteCardDiary() {
           />
         </div>
 
-        <div className="post-textarea diary-textarea">
+        <div className="diary-textarea">
           <textarea
             ref={textareaRef}
             value={content}
@@ -83,20 +83,7 @@ export default function WriteCardDiary() {
             rows={5}
           />
         </div>
-
-        <div className="diary-media-toggle">
-          <button onClick={() => setShowMedia(!showMedia)}>
-            {showMedia ? "Ẩn media" : "Thêm ảnh/nhạc"}
-          </button>
-        </div>
-
-        {showMedia && (
-          <div className="post-footer">
-            <button>+Ảnh</button>
-            <button>+Video</button>
-            <button>+Nhạc</button>
-          </div>
-        )}
+        <ButtonBottom/>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import Header from "../attitues/header";
 import Sidebar from "../attitues/sidebar";
-
+import "../style/mainlayout.css"
 function Layout({children}) {
   return (
       <div className="layout">

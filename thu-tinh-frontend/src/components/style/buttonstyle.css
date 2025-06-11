@@ -1,0 +1,10 @@
+button{
+  background-color: #FFDCA9;
+  border:1px solid #FFDCA9;
+  padding: 5px;
+}
+.post-button {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}

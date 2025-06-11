@@ -7,7 +7,7 @@ function WriteDiary() {
   return (
     <Layout>
           <PostTypeController type="diary"/>
-          <WriteCardDiary/>
+          <WriteCardDiary type="diary"/>
     </Layout>
   );
 }

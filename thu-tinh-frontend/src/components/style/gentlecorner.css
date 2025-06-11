@@ -1,0 +1,97 @@
+.gentle-card{
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  height: 80vh;
+  background: linear-gradient(
+    to right,
+    rgba(237, 234, 230, 0.5) 0%,       /* trái */
+    rgba(237, 234, 230, 0.5) 49.5%,    /* trái gần hết */
+    #ccc 49.5%,                        /* đường phân cách */
+    #ccc 50.5%,                        /* đường phân cách */
+    #F5EEE6 50.5%,                        /* phải */
+    #F5EEE6 100%                          /* phải */
+  );
+}
+.left-content,.right-content{
+  flex: 1;
+  padding: 1rem;
+}
+.left-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #36F133;
+  font-weight: bold;
+}
+.right-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 4rem; 
+  padding-top: 4rem;
+}
+.controlBtn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.divider {
+  width: 2px;
+  background-color: #ccc; /* màu đường phân cách */
+  margin: 0 1rem;
+  height: auto; /* sẽ kéo dài theo chiều cao cha */
+}
+input:disabled + label {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.sub-options{
+  margin-left: 10%;
+  padding: 5px;
+}
+.main-options{
+  margin: 10px;
+}
+label{
+  padding: 5px;
+  
+}
+label span{
+  background-color: #EDEAE6;
+  margin: 10px ;
+}
+input[type="radio"] {
+  accent-color: #84D58C;
+}
+.gentle-background {
+  background-image: url("../image/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+  background-color: #fdf9f6;
+  min-height: 100vh;
+   
+  background-color: rgba(255, 255, 255, 0.5); 
+  background-blend-mode:soft-light;
+}
+.gentle-background.rain {
+  background-image: url("../image/rain.jpg");
+  background-size: 95%;
+  background-position: center;
+}
+
+.gentle-background.stream {
+  background-image: url("../image/stream.jpg");
+  background-size: 95%;
+  background-position: center;
+}
+
+.gentle-background.piano {
+  background-image: url("../image/piano.jpg");
+  background-size: 95%;
+  background-position: center;
+}

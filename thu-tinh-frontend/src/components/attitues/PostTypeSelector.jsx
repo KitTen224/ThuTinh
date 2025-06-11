@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "../style/popup.css"
 function PostTypeSelector({ type, visibility, onClose, onConfirm }) {
   const navigate = useNavigate();
   return (

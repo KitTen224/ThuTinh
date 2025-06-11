@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #EDEAE6;
+  color: #3c3c3c;
+}
+/*link*/
+:link{
+  text-decoration: none;
+}
+/*scroll*/
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6c6;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+/*layout.jsx*/
+.timeline-main {
+  flex: 1;
+  padding: 1rem;
+  background-color: #FDF9F6;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+}
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/*header.jsx*/
+.header {
+  height: 3rem;
+  border-bottom: 1px solid #C8E4D6;
+  background-color: #F5EEE6;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  z-index: 1;
+}
+.subtitle {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:1px solid #84D58C;
+  margin-right: 0.5rem;
+}
+.avatarH{
+  width: 40px;
+  border-radius: 50%;
+  border:1px solid #84D58C;
+  margin-right: 0.5rem;
+}
+/*sidebar*/
+.sidebar {
+  width: 220px;
+  background-color: #F5EEE6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #C8E4D6;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo {
+  width: 210px;
+  height: 150px;
+}
+
+.menu {
+  padding: 10px;
+}
+.menu li {
+  background-color: #EDEAE6;
+  margin: 1.5rem 0;
+  list-style: disc inside;
+}
+.menu li::marker {
+  color: #C8E4D6; /* be sẫm dịu */
+  font-size: 1.1rem;
+}
+/*profile-status,userinfor.jsx*/
+.profile{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.profile-status {
+  margin-top: 1rem;
+  text-align: center;
+}
+.post-header{
+  display: flex;
+  flex-wrap: wrap;
+}
+.status-green {
+  color: #36F133;
+  font-weight: bold;
+}
+.status-display{
+  font-weight: bold;
+}
+.status-display.happy{
+  color: #84D58C;
+}
+.status-display.sad{
+  color: #A6B7D4;
+}
+.status-display.tired{
+  color: #D3C1C1;
+}
+.status-display.grateful{
+  color: #AACCA4;
+}
+.status-display.anxious{
+  color: #E1B7B7;
+}
+/*gentle*/
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #FFDCA9;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  padding: 8px 10px;
+  z-index: 101;
+  transition: left 0.3s ease;
+}
+.sidebar-toggle-btn.open {
+  left: 252px; /* đúng bằng chiều rộng sidebar */
+}
