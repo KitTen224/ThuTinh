@@ -1,4 +1,4 @@
-import ButtonBottom from "./btnbottom";
+import ButtonBottom from "../buttonbar/btnbottom";
 import UserInfor from "../user/userinfor";
 
 export default function SmallPost({type}){

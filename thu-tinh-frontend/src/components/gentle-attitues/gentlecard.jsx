@@ -1,5 +1,5 @@
-import GentleCardLeft from "../attitues/gcardleft";
-import GentleCardRight from "../attitues/gcardright";
+import GentleCardLeft from "./gcardleft";
+import GentleCardRight from "./gcardright";
 import "../style/gentlecorner.css";
 
 

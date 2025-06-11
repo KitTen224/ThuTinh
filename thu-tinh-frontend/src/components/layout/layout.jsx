@@ -1,5 +1,5 @@
-import Header from "../attitues/header";
-import Sidebar from "../attitues/sidebar";
+import Header from "../layout/header";
+import Sidebar from "../layout/sidebar";
 import "../style/mainlayout.css"
 function Layout({children}) {
   return (

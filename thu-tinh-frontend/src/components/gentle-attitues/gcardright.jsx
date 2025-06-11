@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import StartButton from "./startButton";
+import StartButton from "../typeorselectbar/startButton";
 
 export default function GentleCardRight(){
   const [mainType, setMainType] = useState(""); // setTime

@@ -1,5 +1,5 @@
 
-import PostButton from "../attitues/postbutton";
+import PostButton from "../buttonbar/postbutton";
 import "../style/body.css"
 
 function PostCard({children}) {

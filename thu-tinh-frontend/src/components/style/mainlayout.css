@@ -83,17 +83,50 @@ body {
   height: 150px;
 }
 
-.menu {
-  padding: 10px;
-}
-.menu li {
+li {
   background-color: #EDEAE6;
   margin: 1.5rem 0;
   list-style: disc inside;
 }
-.menu li::marker {
-  color: #C8E4D6; /* be sẫm dịu */
+li::marker {
+  color: #C8E4D6; 
   font-size: 1.1rem;
+}
+
+.list_li {
+  padding: 10px;
+}
+
+.dot {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #cdeade;
+  border-radius: 50%;
+  display: inline-block; /* giúp <span> có kích thước */
+}
+
+.label_dot {
+  background-color: #efede9; /* nền trắng ngà */
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #4e4747; /* màu chữ gần giống ảnh */
+  font-weight: 500;
+}
+/*invisibleleter*/
+.letter_card{  
+  background-color: #A6B7D4; /*#fdfaf5*/
+  border-radius: 4px;
+}
+.letter_card h3{
+   position: relative;
+  background-color: #F5EEE6;
+  border-radius: 4px;
+  padding: 10px;
+}
+.arrow_control{
+  position: absolute;
+  right: 1.5rem;
 }
 /*profile-status,userinfor.jsx*/
 .profile{

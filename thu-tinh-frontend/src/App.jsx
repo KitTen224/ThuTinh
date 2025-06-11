@@ -1,13 +1,20 @@
 import { Routes, Route } from 'react-router-dom'
-import WriteNormal from './pages/writenormal.jsx'
-import WriteAnonymous from './pages/writeanonymous.jsx'
-import WriteDiary from './pages/writediary.jsx'
-import TimelineNormal from './pages/timeline.jsx'
-import TimelineAnonymous from './pages/timelineanonymous.jsx'
-import TimelineDiary from './pages/timelinediary.jsx'
-import GentleHome from './pages/gentlehome.jsx'
-import GentleMeditation from './pages/gentlemeditation.jsx'
-import GentleSilentMusic from './pages/gentleSilentMusic.jsx'
+
+import WriteNormal from './pages/write/writenormal.jsx'
+import WriteAnonymous from './pages/write/writeanonymous.jsx'
+import WriteDiary from './pages/write/writediary.jsx'
+
+import TimelineNormal from './pages/timeline/timeline.jsx'
+import TimelineAnonymous from './pages/timeline/timelineanonymous.jsx'
+import TimelineDiary from './pages/timeline/timelinediary.jsx'
+
+import GentleHome from './pages/gentle/gentlehome.jsx'
+import GentleMeditation from './pages/gentle/gentlemeditation.jsx'
+import GentleSilentMusic from './pages/gentle/gentleSilentMusic.jsx'
+
+import InvisibleLetter from './pages/invisible/invisibleletter.jsx'
+
+import WhisperSpace from './pages/whisper/whisper.jsx'
 
 
 function App() {
@@ -22,6 +29,8 @@ function App() {
       <Route path="/gentle/home" element={<GentleHome />} />
       <Route path="/gentle/meditation" element={<GentleMeditation />} />
       <Route path="/gentle/silentmusic" element={<GentleSilentMusic />} />
+      <Route path="/invisibleletter" element={<InvisibleLetter/>}/>
+      <Route path="/whisperspace" element={<WhisperSpace/>}/>
     </Routes>
   )
 }

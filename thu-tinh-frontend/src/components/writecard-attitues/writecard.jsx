@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ButtonBottom from "../attitues/btnbottom";
+import ButtonBottom from "../buttonbar/btnbottom";
 import UserInfor from "../user/userinfor";
 import "../style/body.css"
 function WriteCard({type}) {

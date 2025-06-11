@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PostTypeBar from "../attitues/posttypebar";
-import PostTypeSelector from "../attitues/PostTypeSelector";
+import PostTypeBar from "./posttypebar";
+import PostTypeSelector from "./PostTypeSelector";
 import "../style/body.css"
 export default function PostTypeController({ type, onChange }) {
   const [visibility, setVisibility] = useState("public");

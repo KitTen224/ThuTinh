@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MoodSelector from "../attitues/moodselector";
+import MoodSelector from "../typeorselectbar/moodselector";
 import logo from "../image/logo.jpg";
 
 export default function UserInfor({type}) {

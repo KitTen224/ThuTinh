@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import logo from "../image/logo.jpg";
-import MoodSelector from "../attitues/moodselector";
-import ButtonBottom from "../attitues/btnbottom";
+import MoodSelector from "../typeorselectbar/moodselector";
+import ButtonBottom from "../buttonbar/btnbottom";
 import "../style/body.css"
 export default function WriteCardDiary() {
   const [content, setContent] = useState("");

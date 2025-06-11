@@ -1,11 +1,13 @@
-import BreathingCircle from "../components/attitues/breathingCircle";
-import ControlButton from "../components/attitues/controlButton";
-import Timer from "../components/attitues/timer";
-import GentleLayout from "../components/main/gentlelayout";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
-export default function GentleMeditation(){
+import ControlButton from "../../components/buttonbar/controlButton";
+import Timer from "../../components/gentle-attitues/timer";
+import SilentMusic from "../../components/gentle-attitues/silentMusic";
+import GentleLayout from "../../components/layout/gentlelayout";
+
+
+export default function GentleSilentMusic(){
   const location = useLocation();
   const state = location.state || {};
 
@@ -19,12 +21,13 @@ export default function GentleMeditation(){
   } else if (state.time === "fistyminues") {
     duration = 15;
   }
+
   return(
     <GentleLayout>
-      <div className="gentle-background">
+      <div className="gentle-background ${state.subType}">
         <div className="meditation-page">
           <div className="meditation-content">
-            <BreathingCircle isPaused={isPaused}/>
+            <SilentMusic isPaused={isPaused}/>
             {duration > 0 && <Timer minutes={duration} isPaused={isPaused}/>}
             <ControlButton isPaused={isPaused}
               onTogglePause={() => setIsPaused((prev) => !prev)}/>

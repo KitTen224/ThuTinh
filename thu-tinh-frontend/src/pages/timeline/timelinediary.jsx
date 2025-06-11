@@ -1,8 +1,7 @@
-import Layout from "../components/main/layout";
-import PostCardDiary from "../components/main/postcarddiary";
-import diaryData from "../components/data/datamock";
-import "../index.css";
-import PostCard from "../components/main/postcard";
+import Layout from "../../components/layout/layout";
+import PostCardDiary from "../../components/postcard-attitues/postcarddiary";
+import diaryData from "../../components/data/datamock";
+import PostCard from "../../components/postcard-attitues/postcard";
 
 export default function TimelineDiary() {
   return (
