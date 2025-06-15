@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import "../style/buttonstyle.css"
 export default function ControlButton({ isPaused, onTogglePause }) {
   const navigate = useNavigate();
 

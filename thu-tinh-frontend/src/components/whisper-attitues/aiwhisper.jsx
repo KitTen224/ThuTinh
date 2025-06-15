@@ -2,7 +2,7 @@
 export default function AiWhisper({content}){
   return(
     <div className="aiwhisper_box">
-      {content}
+      <p>Thư Tĩnh:{content}</p>
     </div>
   )
 }

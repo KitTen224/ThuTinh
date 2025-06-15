@@ -1,10 +1,29 @@
 button{
   background-color: #FFDCA9;
-  border:1px solid #FFDCA9;
+  border:none;
+  border-radius: 4px;
   padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 8rem;
+}
+button:hover {
+  background-color: #e69500;
 }
 .post-button {
   margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
+}
+
+/*gentle*/
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 101;
+}
+.sidebar-toggle-btn.open {
+  left: 252px; /* đúng bằng chiều rộng sidebar */
 }

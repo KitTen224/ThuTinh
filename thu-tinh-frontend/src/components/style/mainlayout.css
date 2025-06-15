@@ -165,19 +165,3 @@ li::marker {
 .status-display.anxious{
   color: #E1B7B7;
 }
-/*gentle*/
-.sidebar-toggle-btn {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background-color: #FFDCA9;
-  border: none;
-  border-radius: 0 6px 6px 0;
-  padding: 8px 10px;
-  z-index: 101;
-  transition: left 0.3s ease;
-}
-.sidebar-toggle-btn.open {
-  left: 252px; /* đúng bằng chiều rộng sidebar */
-}

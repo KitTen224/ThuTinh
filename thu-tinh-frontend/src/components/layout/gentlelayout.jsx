@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar from "./sidebar";
 import Header from "./header";
-import "../style/mainlayout.css"
+import "../style/mainlayout.css";
 
 
 export default function GentleLayout({children}) {

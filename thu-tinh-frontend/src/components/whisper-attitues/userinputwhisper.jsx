@@ -17,7 +17,7 @@ export default function UserInputWhisper({onSubmit}){
         onChange={(e)=>setInput(e.target.value)}
         onKeyDown={(e)=>e.key === "Enter" && handleSend()}
         />
-        <button onclick={handleSend}>Gửi</button>
+        <button onClick={handleSend}>Gửi</button>
     </div>
   )
 }

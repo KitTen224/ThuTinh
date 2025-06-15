@@ -3,7 +3,7 @@ import UserWhisper from "./userwhisper";
 import AiWhisper from "./aiwhisper";
 import UserInputWhisper from "./userinputwhisper";
 import NotificationWhisper from "./notewhisper";
-
+import "../style/whispercard.css"
 export default function WhisperCard(){
   const[whispers,setWhispers] =useState([]);
 
@@ -14,14 +14,20 @@ export default function WhisperCard(){
 
   return(
     <div className="whisper_card">
-      {whispers.map((w,index)=>(
-        <div key={index}>
-          <UserWhisper content={w.user}/>
-          <AiWhisper content={w.ai}/>
-        </div>
-      ))}
-      <UserInputWhisper onSubmit={handleWhisper}/>
-      <NotificationWhisper/>
+      <div className="chat_box">
+        {whispers.map((w,index)=>(
+          <div key={index}>
+            <UserWhisper content={w.user}/>
+            <AiWhisper content={w.ai}/>
+          </div>
+        ))}
+      </div>
+      <div>
+        <UserInputWhisper onSubmit={handleWhisper}/>
+      </div>
+      <div>
+        <NotificationWhisper/>
+      </div>
     </div>
   )
 }
