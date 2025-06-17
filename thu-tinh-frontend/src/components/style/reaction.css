@@ -1,0 +1,31 @@
+.reaction-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #8b5e3c;
+  opacity: 0.9;
+}
+
+.reaction-bar span {
+  cursor: default;
+  padding: 4px 8px;
+  background: #fdf6ec;
+  border-radius: 12px;
+  border: 1px solid #f3e2c0;
+}
+
+.see-more-btn {
+  background: transparent;
+  border: none;
+  color: #d97706; 
+  font-size: 13px; 
+  padding: 2px 6px;
+}
+.see-more-btn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.comment-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  padding: 6px 12px;
+  background-color: #fdf6ec;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.see-more-comments {
+  background: none;
+  border: none;
+  color: #d97706;
+  font-size: 13px;
+}
+.see-more-comments:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.comment-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #a87750;
+  
+}
+
+.comment-reply:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment-reply-box {
+  margin-top: 6px;
+}
+
+.comment-reply-box textarea {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #ddd0bd;
+  background: #fffaf3;
+  resize: none;
+}

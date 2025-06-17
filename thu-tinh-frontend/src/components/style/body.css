@@ -24,6 +24,28 @@
   color: #666;
 }
 
+/*---------*/
+.diary-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  color: #705f46;
+  margin-bottom: 24px;
+}
+
+.post-card.diary {
+  background-color: #fdfaf5;
+  border: 1px solid #e6ddd3;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 6px rgba(180, 160, 140, 0.08);
+}
 /*writecard.jsx*/
 .post-type-bar {
   background-color: #f5eee6;
@@ -31,8 +53,12 @@
   border-radius: 0.75rem;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  text-align: center;
 }
-
+.change-type{
+  position: absolute;
+  right: 3rem;
+}
 .change-type:hover {
   text-decoration: underline;
 }
@@ -55,6 +81,7 @@
   padding: 10px;
 }
 /*writediary.jsx*/
+
 .diary-textarea .diary-input{
   border: none;
   outline: none;
@@ -74,7 +101,9 @@
   background-size: 100% 2.4em;
   padding: 8px 0;
   background-color:#F5EEE6 ;
-  overflow: scroll;
+  overflow-y:auto;
+  min-height: 120px;      /* đảm bảo có độ cao ban đầu */
+  max-height: 200px;
 }
 .post-card.diary{
   background-color:#F5EEE6 ;
@@ -89,26 +118,4 @@
   background: transparent;
   border-bottom: 1px solid #36F133;
   margin-top: 8px;
-}
-/*---------*/
-.diary-page {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.page-title {
-  text-align: center;
-  font-size: 28px;
-  color: #705f46;
-  margin-bottom: 24px;
-}
-
-.post-card.diary {
-  background-color: #fdfaf5;
-  border: 1px solid #e6ddd3;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 24px;
-  box-shadow: 2px 2px 6px rgba(180, 160, 140, 0.08);
 }

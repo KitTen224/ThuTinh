@@ -4,10 +4,32 @@ body {
   background-color: #EDEAE6;
   color: #3c3c3c;
 }
-/*link*/
-:link{
-  text-decoration: none;
+html, body {
+  height: 100%;
 }
+li {
+  background-color: #EDEAE6;
+  margin: 1.5rem 0;
+  list-style: disc inside;
+}
+li::marker {
+  color: #C8E4D6; 
+  font-size: 1.1rem;
+}
+/*link*/
+.link-decor{
+  text-decoration: none;
+  color: #3c3c3c;
+}
+.link-decor:hover{
+  color: #e69500;
+}
+.active-label .link-decor {
+  color: #f97316; 
+  font-weight: bold;
+  position: relative;
+}
+
 /*scroll*/
 ::-webkit-scrollbar-thumb {
   background-color: #c6c6c6;
@@ -26,7 +48,7 @@ body {
 }
 .layout {
   display: flex;
-  height: 100vh;
+
 }
 .content-area {
   flex: 1;
@@ -42,7 +64,6 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  z-index: 1;
 }
 .subtitle {
   font-weight: normal;
@@ -61,8 +82,12 @@ body {
   border:1px solid #84D58C;
   margin-right: 0.5rem;
 }
-/*sidebar*/
+
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  align-self: flex-start;
   width: 220px;
   background-color: #F5EEE6;
   padding: 1rem;
@@ -70,9 +95,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid #C8E4D6;
-  z-index: 2;
-  position: relative;
 }
+
 
 .logo-wrapper {
   text-align: center;
@@ -80,17 +104,7 @@ body {
 
 .logo {
   width: 210px;
-  height: 150px;
-}
-
-li {
-  background-color: #EDEAE6;
-  margin: 1.5rem 0;
-  list-style: disc inside;
-}
-li::marker {
-  color: #C8E4D6; 
-  font-size: 1.1rem;
+  height: 200px;
 }
 
 .list_li {
@@ -165,3 +179,5 @@ li::marker {
 .status-display.anxious{
   color: #E1B7B7;
 }
+
+

@@ -73,7 +73,7 @@ input[type="radio"] {
   background-position: center;
   background-size: 95%;
   background-color: #fdf9f6;
-  min-height: 100vh;
+  min-height: 80vh;
    
   background-color: rgba(255, 255, 255, 0.5); 
   background-blend-mode:soft-light;

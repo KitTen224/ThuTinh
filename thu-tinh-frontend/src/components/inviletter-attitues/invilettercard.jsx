@@ -28,7 +28,7 @@ export default function InviLetterCard(){
       {letter.map((item, index) => (
         <div key={index} className="letter_card">
           <h3>
-            Bạn có <span style={{ color: "#84D58C" }}>{item.getletter.length}</span> thư vô hình từ bài viết <Link to="" className="timeline_title">{item.title}</Link>
+            Bạn có <span style={{ color: "#84D58C" }}>{item.getletter.length}</span> thư vô hình từ bài viết <Link to="" className="link-decor">[{item.title}]</Link>
             <span className="arrow_control">
               <img 
                 onClick={() => toggleGetletter(index)}

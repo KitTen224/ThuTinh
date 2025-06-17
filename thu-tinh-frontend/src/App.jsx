@@ -29,8 +29,8 @@ function App() {
       <Route path="/gentle/home" element={<GentleHome />} />
       <Route path="/gentle/meditation" element={<GentleMeditation />} />
       <Route path="/gentle/silentmusic" element={<GentleSilentMusic />} />
-      <Route path="/invisibleletter" element={<InvisibleLetter/>}/>
-      <Route path="/whisperspace" element={<WhisperSpace/>}/>
+      <Route path="/letter" element={<InvisibleLetter/>}/>
+      <Route path="/whisper" element={<WhisperSpace/>}/>
     </Routes>
   )
 }

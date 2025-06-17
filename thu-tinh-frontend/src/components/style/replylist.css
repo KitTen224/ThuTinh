@@ -1,0 +1,16 @@
+.reply-list {
+  margin-left: 20px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reply-item {
+  background-color: #fcf7ee;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #444;
+  border-left: 3px solid #f0d9b5;
+}

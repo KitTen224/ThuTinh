@@ -8,7 +8,7 @@
 }
 
 .chat_box{
-  height: 60vh;
+  height: 55vh;
   overflow-y:auto;
   padding: 10px 20px;
   scroll-behavior: smooth;
@@ -47,6 +47,8 @@
 }
 
 .notiwhisper_card{
+  position: absolute;
+  bottom: 0;
   font-size: 12px;
   padding: 10px;
   text-align: center;
@@ -56,7 +58,7 @@
 
 .input_box{
   position:fixed;
-  bottom: 0;
+  bottom: 4rem;
   left: 17rem;
   right: 1rem;
   background-color: #FFF6ED;
@@ -66,11 +68,11 @@
   box-shadow: 0 -1px 4px rgbd(0,0,0,0.05);
 }
 
-.input_box input{
+/* .input_box input{
   flex-grow: 1;
   height: 40px;
   border-radius: 8px;
   border: 1px solid #ddd;
   padding: 0 10px;
   font-size: 14px;
-}
+} */

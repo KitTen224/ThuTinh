@@ -31,7 +31,7 @@ function PostTypeBar({ type,visibility,onClickChangeType }) {
         {current.icon} Bạn đang viết ở: <strong>{current.title}</strong> – {current.desc}
       </p>
       <p>
-        [ Chế độ:  {currentVisibility} ]{" "}
+        [ Chế độ:  {current.title==="Nhật ký"? visibilityMap["private"]:currentVisibility } ]{" "}
         <span
           className="change-type"
           onClick={onClickChangeType}

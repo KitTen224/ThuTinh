@@ -10,14 +10,24 @@ export default function UserInputWhisper({onSubmit}){
   }
   return(
     <div className="input_box">
-      <input
-        type="text"
-        placeholder="Hãy nói lên những điều cậu muốn thì thầm…"
-        value={input}
-        onChange={(e)=>setInput(e.target.value)}
-        onKeyDown={(e)=>e.key === "Enter" && handleSend()}
-        />
-        <button onClick={handleSend}>Gửi</button>
+      <div className="input-wrapper">
+        <textarea
+          className="text-textarea"
+          placeholder="Hãy nói lên những điều cậu muốn thì thầm…"
+          value={input}
+          onChange={(e)=>setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault(); // chặn xuống dòng
+              handleSend(); // gọi hàm gửi
+            }
+          }}
+          />
+          <span
+            className="send-icon"
+            title="Thì thầm"
+            onClick={handleSend}>💭</span>
+      </div>
     </div>
   )
 }
