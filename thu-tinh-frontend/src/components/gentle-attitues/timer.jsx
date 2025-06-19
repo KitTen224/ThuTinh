@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Timer({ minutes, isPaused }) {
   const [timeLeft, setTimeLeft] = useState(minutes * 60);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (isPaused) return;
@@ -9,6 +11,7 @@ export default function Timer({ minutes, isPaused }) {
       setTimeLeft((prev) => {
         if (prev <= 1) {
           clearInterval(interval);
+          navigate("/gentle/home");
           return 0;
         }
         return prev - 1;
@@ -16,7 +19,7 @@ export default function Timer({ minutes, isPaused }) {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [isPaused]);
+  }, [isPaused,navigate]);
 
   const formatTime = (seconds) => {
     const m = Math.floor(seconds / 60)

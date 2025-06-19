@@ -3,12 +3,15 @@
 }
 
 .comment-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.comment-bubble {
   padding: 6px 12px;
   background-color: #fdf6ec;
   border-radius: 8px;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: #444;
 }
 
 .see-more-comments {
@@ -28,6 +31,13 @@
   font-size: 13px;
   color: #a87750;
   
+}
+.see-more-replies {
+  margin-left: 20px;
+}
+.see-more-replies:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .comment-reply:hover {

@@ -26,16 +26,9 @@
   background-image: url(../image/logo.jpg);
   background-size: cover;
   opacity: 0.8;
-  animation: breathCycle 10s infinite ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 
-/* Mỗi vòng 10s: Hít (4s) → Giữ (2s) → Thở (4s) */
-@keyframes breathCycle {
-  0% { transform: scale(1); }            /* bắt đầu */
-  40% { transform: scale(1.5); }         /* kết thúc hít vào (4s) */
-  60% { transform: scale(1.5); }         /* giữ nguyên (2s) */
-  100% { transform: scale(1); }          /* thở ra (4s) */
-}
 .breathing-circle.paused {
   animation-play-state: paused;
 }

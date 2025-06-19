@@ -24,16 +24,23 @@ export default function CommentList({comments = []}){
     <div className="comment-list">
       {visibleComments.map((comment, index) => (
         <div key={index} className="comment-item">
-          <div className="comment-content">
-            <Link to="" className="link-decor"><strong>{comment.author}:</strong></Link>
-            <p>{comment.content}</p> 
+          <div className="comment-bubble">
+            <div className="comment-content">
+              <Link to="" className="link-decor"><strong>{comment.author}:</strong></Link>
+              <p>{comment.content}</p> 
+            </div>
           </div>
 
           <div className="comment-actions">
             <span className="">1 phút trước</span>
             <span className="comment-reply" onClick={() => handleReply(index)}>Trả lời</span>
+            {comment.replies?.length > 0 && replyIndex !== index && (
+              <span className="see-more-replies" onClick={() => handleReply(index)}>
+                Xem thêm {comment.replies.length} phản hồi
+              </span>
+            )}
           </div>
-
+          
           {replyIndex === index && (
             <div className="input-box">
               <ReplyList replies={comment.replies}/>
