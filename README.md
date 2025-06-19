@@ -1,3 +1,5 @@
+© 2025 TRUONG THI KIM THUONG. Mọi quyền được bảo lưu.  
+Đây là một dự án cá nhân nằm trong hồ sơ năng lực. Vui lòng không sao chép khi chưa có sự cho phép.
 ##03/2025
 #VN,JP,EN
 ##VN##
@@ -60,6 +62,9 @@
 
 > “Trong một thế giới ồn ào, điều dịu dàng nhất là được hiểu — không cần nói lớn.”
 --------------------
+© 2025 TRUONG THI KIM THUONG. 無断転載・複製を禁じます。  
+本プロジェクトは個人のポートフォリオ用です。許可なくコピーしないでください。
+-------------------------
 ##JP##
 # 🕊️ 『Thư Tĩnh（静けさの手紙）』– 心に優しいSNS
 
@@ -121,6 +126,9 @@
 
 > 「騒がしい世界の中で、いちばん優しいことは、静かに理解されること。」
 ----------------
+© 2025 TRUONG THI KIM THUONG. All rights reserved.  
+This is a personal portfolio project. Please do not copy without permission.
+-------------------------------------
 ##EN##
 # 🕊️ Thư Tĩnh – A Gentle Social Space for the Soul
 
