@@ -1,23 +1,23 @@
 import { Routes, Route } from 'react-router-dom'
 
-import WriteNormal from './pages/write/writenormal.jsx'
-import WriteAnonymous from './pages/write/writeanonymous.jsx'
-import WriteDiary from './pages/write/writediary.jsx'
+import WriteNormal from '../pages/write/writenormal.jsx'
+import WriteAnonymous from '../pages/write/writeanonymous.jsx'
+import WriteDiary from '../pages/write/writediary.jsx'
 
-import TimelineNormal from './pages/timeline/timeline.jsx'
-import TimelineAnonymous from './pages/timeline/timelineanonymous.jsx'
-import TimelineDiary from './pages/timeline/timelinediary.jsx'
+import TimelineNormal from '../pages/timeline/timeline.jsx'
+import TimelineAnonymous from '../pages/timeline/timelineanonymous.jsx'
+import TimelineDiary from '../pages/timeline/timelinediary.jsx'
 
-import GentleHome from './pages/gentle/gentlehome.jsx'
-import GentleMeditation from './pages/gentle/gentlemeditation.jsx'
-import GentleSilentMusic from './pages/gentle/gentleSilentMusic.jsx'
+import GentleHome from '../pages/gentle/gentlehome.jsx'
+import GentleMeditation from '../pages/gentle/gentlemeditation.jsx'
+import GentleSilentMusic from '../pages/gentle/gentleSilentMusic.jsx'
 
-import InvisibleLetter from './pages/invisible/invisibleletter.jsx'
+import InvisibleLetter from '../pages/invisible/invisibleletter.jsx'
 
-import WhisperSpace from './pages/whisper/whisper.jsx'
+import WhisperSpace from '../pages/whisper/whisper.jsx'
 
 
-function App() {
+function AppRoutes() {
   return (
     <Routes>
       <Route path="/timeline/normal" element={<TimelineNormal />} />
@@ -35,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default AppRoutes
